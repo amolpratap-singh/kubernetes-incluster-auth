@@ -261,6 +261,17 @@ or:
 
 the application validates the required configuration during client initialization.
 
+## Compatibility matrix
+
+| Python | Kubernetes Python client | `load_incluster_config()` | Explicit configuration |
+| ------ | ------------------------ | ------------------------- | ---------------------- |
+| 3.11   | 35.x                     | ✅                         | ✅                      |
+| 3.12   | 35.x                     | ✅                         | ✅                      |
+| 3.13   | 35.x                     | ✅                         | ✅                      |
+| 3.13   | 36.0.0                   | ⚠️ Regression reported    | ✅                      |
+| 3.13   | Fixed release            | ✅                         | ✅                      |
+
+
 ## Disclaimer
 
 This is an independent community project and is not affiliated with or endorsed by the Kubernetes project.
